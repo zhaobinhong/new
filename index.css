@@ -1,0 +1,124 @@
+/*样式初始化*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    /* font: 12px "宋体", "Arial Narrow", HELVETICA; */
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*基本样式*/
+
+/*pie   table*/
+.statement {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #5b5b5b;
+    text-align: center;
+}
+
+.tableHeader {
+    border-bottom: #c9c8cd dashed 1px;
+}
+
+.statement tr {
+    line-height: 35px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin: 26px 0 26px 0;
+    color: #585858;
+}
+
+.label {
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    color: #666666;
+}
+
+/*bar.html*/
+/* .borderLeft{
+    border-left: 1px solid #eaeaea;
+} */
+.balanceTextColor {
+    color: #e66772
+}
+
+.barBorder {
+    border-top: #c9c8cd dashed 1px
+}
+
+/*Total.html*/
+.td_lineHeight {
+    line-height: 48px;
+}
+
+.totalMoney{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fd4733;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+.buttonRestore {
+    margin-left: -40px;
+}
+
+.totalButtonType {
+    font-size: 16px;
+    background: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    padding: 0px;
+    outline: none;
+    color: #fd4733;
+}

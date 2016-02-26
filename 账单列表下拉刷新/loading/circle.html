@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8"/>
+
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta name="viewport" content="width=device-width">
+<meta name="Author" content="bankeys-ZBH"/>
+<meta name="Copyright" content="bankeys "/>
+<title>Sonic</title>
+
+<style>
+
+</style>
+
+<body>
+<div id="div"></div>
+<script src="sonic.js"></script>
+<script>
+
+    var circle = new Sonic({
+
+        width: 30,
+        height: 30,
+        padding: 0,
+
+        strokeColor: '#000',
+
+        pointDistance: .01,
+        stepsPerFrame: 3,
+        trailLength: .7,
+
+        step: 'fader',
+
+        setup: function () {
+            this._.lineWidth = 3;
+        },
+
+        path: [
+            ['arc', 14, 14, 12, 0, 360]
+        ]
+
+    });
+
+    circle.play();
+    var oDiv=document.getElementById("div");
+    oDiv.appendChild(circle.canvas);
+    var canvas=document.getElementsByTagName("canvas")[0];
+    canvas.style.position="relative";
+    canvas.style.left="50%";
+    canvas.style.marginLeft="-15px";
+
+
+</script>
+
+</body>
